@@ -16,6 +16,12 @@ function App() {
     // display the user requested number of paragraph
     // slice with return a new copy of array
     // 0, meaning selecting data from the start of the array
+    if(count <= 0) {
+      amount = 1;
+    }
+    if(count > 8) {
+      amount = 8;
+    }
     setText(data.slice(0, amount));
   }
 
