@@ -8,8 +8,15 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // count is a string even though type of is number, check by(typeof count)
+    // console.log(count);
+    // convert string to number
+    let amount = parseInt(count);
 
-    setText(data);
+    // display the user requested number of paragraph
+    // slice with return a new copy of array
+    // 0, meaning selecting data from the start of the array
+    setText(data.slice(0, amount));
   }
 
   return (
